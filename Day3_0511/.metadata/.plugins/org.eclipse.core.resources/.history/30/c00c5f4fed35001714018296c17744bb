@@ -1,0 +1,10 @@
+package com.jihoon.java.array;
+
+public class ArraySub {
+	
+	int a;
+	
+	public void printNumber(){
+		System.out.println(a);
+	}
+}

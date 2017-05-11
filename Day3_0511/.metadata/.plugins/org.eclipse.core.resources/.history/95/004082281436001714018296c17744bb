@@ -1,0 +1,18 @@
+package com.jihoon.java.string;
+
+public class Word {
+
+	public static void main(String[] args) {
+
+		String name = "안녕하세요";
+	    //1. 글자 자르기				// String 클래스는 인덱스가 글자 사이에 있음. 
+		String secondWord = name.substring(1, 2);	
+		System.out.println(secondWord);
+		
+		//2.
+		int 문자열길이 = name.length();
+		System.out.println(문자열길이);
+
+	}
+
+}

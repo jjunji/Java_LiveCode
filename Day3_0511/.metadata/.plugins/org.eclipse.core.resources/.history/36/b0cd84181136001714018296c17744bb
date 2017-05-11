@@ -1,0 +1,31 @@
+package com.jihoon.java.collection;
+
+import java.util.HashMap;
+
+import com.jihoon.java.dummy.Student;
+
+public class CollectionMain2 {
+
+	public static void main(String[] args) {
+		
+		Student a1 = new Student();
+		a1.name = "전지훈";
+		a1.age = 500;
+		
+		Student a2 = new Student();
+		a2.name = "이순신";
+		a2.age = 1000;
+		
+		// 2. Map 계열
+		// 키1 : 값 , 키2 : 값의 형태로 저장된다.
+		//HashMap map = new HashMap();
+		
+		HashMap<String, Student> map = new HashMap<>();
+		map.put("key1", a1);
+		map.put("key2", a2);
+		
+		System.out.println(map.get("key1").name);
+
+	}
+
+}

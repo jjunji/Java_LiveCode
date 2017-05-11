@@ -1,0 +1,43 @@
+
+public class WordCountMain {
+
+	public static void main(String[] args) {
+
+		WordCountMain main = new WordCountMain();
+		System.out.println("10000까지 8의 개수는 " + main.count(10000,8));
+	}
+	
+	public int count(int limit, int target){
+		int result = 0;
+		String unit = target + "";
+		
+		for(int i = 0; i <= limit; i++){
+			
+			/*String temp = i + "";
+			int temp_length = temp.length();
+			
+			for(int j=0; j < temp.length(); j++){
+				
+				String one = temp.charAt(j) + "";
+				
+				if(unit.equals(one)){           // String 비교 연산은 equals로 한다.
+					result = result + i;
+				}
+			}
+		*/
+		
+			// split 사용
+			String temp = i + "";
+			String array[] = temp.split("");
+			for(String item : array){
+				if(item.equals(unit)){
+					result = result + 1;
+				}
+			}
+			
+			
+		}
+		return result;
+	}
+
+}

@@ -1,0 +1,128 @@
+package com.jihoon.java.collection;
+
+import java.util.ArrayList;
+
+import com.jihoon.java.dummy.Student;
+
+public class CollectionMain {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Student> list = new ArrayList<>();
+		
+		Student a1 = new Student();
+		a1.name = "전지훈";
+		a1.age = 500;
+		
+		Student a2 = new Student();
+		a2.name = "이순신";
+		a2.age = 1000;
+		
+		list.add(a1);
+		list.add(a2);
+		
+		System.out.println(a1.name);
+		
+		// 2. Map 계열
+		
+		// 3. Set 계열
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+package com.jihoon.java.collection;
+
+import java.util.ArrayList;
+
+public class CollectionMain {
+
+	public static void main(String[] args) {
+		
+		// 1. List 계열
+		// 내부적으로 값이 입력되면 값과 함께 순서가 저장된다.
+		// .add(값) : 값 입력
+		// .get(인덱스) : 값 출력
+		ArrayList<Integer> list = new ArrayList<>(); // 객체이기 때문에 new로 , 객체를 담기 위한 배열 
+		int a = 33;
+		
+		
+		//제네릭을 사용하지 않는 컬렉션은 입력되는 값을 Object로 Casting 한다.
+		list.add((Integer)a); // 지금은 (Integer) 캐스팅 안해도 저절로 기본 -> 객체 -> 기본타입으로 바꿔줌.
+		list.add(457);
+		list.add(1234);
+		
+//		list.add("안녕하세요");
+//		list.add("abcd");
+		
+		// 스트링 첫번째 글자 출력하기
+		//System.out.println("안녕하세요".substring(0, 1));
+		
+		
+/*		
+ 		int list_length = list.size();
+		// 일반 for문
+		for(int i =0; i < list_length; i++){
+			System.out.println(list.get(i));
+		}
+		*/
+		
+		// 향상된 for문
+/*		for(Object item : list){
+			String string = item + "";
+			int number = Integer.parseInt(string);
+			//System.out.println(string.substring(0, 1));
+			//System.out.println(item);
+			System.out.println( number + 3 );
+		}*/
+		/*
+		for(int item : list){
+			System.out.println( item + 3 );
+		}
+		*/
+		
+		// 2. Map 계열
+		
+		// 3. Set 계열
+/*
+	}
+
+}
+
+
+*/
+

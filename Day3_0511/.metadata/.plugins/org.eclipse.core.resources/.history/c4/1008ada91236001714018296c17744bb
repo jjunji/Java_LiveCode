@@ -1,0 +1,15 @@
+package com.jihoon.java.string;
+
+public class Word {
+
+	public static void main(String[] args) {
+
+		String name = "æ»≥Á«œººø‰";
+		
+		String secondWord = name.substring(1, 2);
+		
+		System.out.println(secondWord);
+
+	}
+
+}

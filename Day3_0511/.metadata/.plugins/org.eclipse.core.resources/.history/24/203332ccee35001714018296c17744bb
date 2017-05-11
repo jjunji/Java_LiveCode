@@ -1,0 +1,42 @@
+package com.jihoon.java.array;
+
+public class ArrayMain {
+
+	public static void main(String[] args) {
+		
+		int arr[] = new int[10];
+		
+		int arr2[] = {1,2,3,4,5};
+		
+		for(int a1 : arr){
+			System.out.print(a1);
+		}
+		
+		System.out.println();
+		
+		for(int a1 : arr2){
+			System.out.print(a1);
+		}
+		
+		
+		// ArraySub클래스를 배열로
+		
+		ArraySub subs[] = new ArraySub[10];
+		
+		for( ArraySub sub : subs){
+			System.out.println(sub.a);
+		}
+		
+	}
+
+}
+
+
+
+/*
+		int a = 0;
+
+		ArraySub sub = new ArraySub();
+		sub.printNumber();
+
+*/

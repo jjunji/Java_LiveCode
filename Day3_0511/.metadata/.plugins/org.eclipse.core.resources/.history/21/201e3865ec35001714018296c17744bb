@@ -1,0 +1,15 @@
+package com.jihoon.java.array;
+
+public class ArrayMain {
+
+	public static void main(String[] args) {
+		
+		int a = 0;
+		int b;
+		int c;
+		
+		System.out.println(a);
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.jihoon.java.array;
+
+public class ArrayMain {
+
+	public static void main(String[] args) {
+		
+		int arr[] = new int[10];
+		
+		int arr2[] = {1,2,3,4,5};
+		
+		for(int a1 : arr){
+			System.out.println(a1);
+		}
+		
+		for(int a1 : arr2){
+			System.out.println(a1);
+		}
+	}
+
+}
+
+
+
+/*
+		int a = 0;
+
+		ArraySub sub = new ArraySub();
+		sub.printNumber();
+
+*/

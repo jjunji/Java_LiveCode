@@ -1,0 +1,13 @@
+
+public class FibonacciMain {
+
+	public static void main(String[] args) {
+		
+		int n = 15;
+		
+		Fibonacci fi = new Fibonacci();
+		fi.process(15);
+
+	}
+
+}

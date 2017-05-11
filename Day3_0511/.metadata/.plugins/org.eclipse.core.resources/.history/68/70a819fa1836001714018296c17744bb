@@ -1,0 +1,30 @@
+package com.jihoon.java.minitest;
+
+public class miniTestMain {
+
+	public static void main(String[] args) {
+
+		// 1 부터 10,000까지 8이라는 숫자가 총 몇번 나오는가 (8이 포함된 숫자가 아니라 8이라는 숫자를 모두 카운팅)
+		
+		String temp;
+		int temp_len;
+		int count = 0;
+		
+		for(int i = 0; i <= 10000; i++){
+			
+			temp = Integer.toString(i);		
+			temp_len = temp.length();
+			
+			for(int j = 0; j <= temp_len; j++){
+				if(temp.charAt(j) == 8){
+					count++;
+				}
+			}
+			
+		}
+		
+		System.out.println(count);
+		
+	}
+
+}

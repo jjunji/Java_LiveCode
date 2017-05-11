@@ -1,0 +1,17 @@
+package com.jihoon.java.array;
+
+public class ArrayMain {
+
+	public static void main(String[] args) {
+	
+		// 배열을 초기화 하는 2가지 방법.
+		
+		int arr[] = new int[10];
+		int arr2[] = {1,2,3,4,5};
+		
+		for( int a : arr){
+			System.out.println(a);
+		}
+
+	}
+}

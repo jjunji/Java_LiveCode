@@ -1,0 +1,16 @@
+package com.jihoon.java.array;
+
+import com.jihoon.java.array2.ArraySub;
+
+public class ArrayMain {
+
+	public static void main(String[] args) {
+		
+		int a = 0;
+
+		ArraySub sub = new ArraySub();
+		sub.printNumber();
+
+	}
+
+}

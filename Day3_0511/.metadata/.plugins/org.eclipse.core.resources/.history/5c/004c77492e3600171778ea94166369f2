@@ -1,0 +1,22 @@
+package com.jihoon.java.array;
+
+public class ArrayMain {
+
+	public static void main(String[] args) {
+	
+		// 배열을 초기화 하는 2가지 방법.
+		
+		int arr[] = new int[10];
+		int arr2[] = {1,2,3,4,5};
+		
+		/*   확장된 for문   */
+		for( int a : arr ){
+			System.out.print(a);  // 0이 10개 출력된다. -> 값을 지정해 주지 않으면 default 값인 0으로 초기화.
+		}
+		
+		for( int a : arr2 ){
+			System.out.print(a);
+		}
+
+	}
+}

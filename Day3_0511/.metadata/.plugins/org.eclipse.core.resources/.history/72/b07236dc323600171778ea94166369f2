@@ -1,0 +1,7 @@
+package com.jihoon.java.array;
+	
+public class ArraySub {
+	
+	public int a;
+		
+}
