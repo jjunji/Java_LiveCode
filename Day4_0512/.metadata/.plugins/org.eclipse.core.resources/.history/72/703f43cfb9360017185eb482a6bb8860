@@ -1,0 +1,49 @@
+package com.jihoon.java.basic;
+import java.util.Scanner;
+
+import com.jihoon.java.bbs.Bbs;
+
+public class BasicMain {
+
+	public static void main(String[] args) {
+	
+//		Bbs bbs = new Bbs();
+//		bbs.title = "안녕하세요";
+//		bbs.author = "홍길동";
+//		bbs.date = System.currentTimeMillis();
+//		bbs.content = "~~";
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("제목을 입력하세요");
+		String title = scanner.nextLine();
+		
+		System.out.println("이름을 입력하세요");
+		String name = scanner.nextLine();
+		
+		System.out.println("내용을 입력하세요");
+		String content = scanner.nextLine();
+		
+		String words = scanner.nextLine(); // 입력이 들어올때 까지 여기서 시스템이 대기한다.
+		
+		
+		//System.out.println("내가 입력한 문자: " + words);
+		
+	}
+}	
+	
+	
+/*
+class Student{
+	String name;  // class Class에도 name변수가 있지만 서로 다른것.
+	int Age;
+}
+
+class Class{
+	String name;
+	int size;
+	int studentCount;
+}
+
+// 클래스가 다른 클래스에서 사용되면 public을 쓴다. 같은 패키지에 있으면 그냥 사용가능?
+*/

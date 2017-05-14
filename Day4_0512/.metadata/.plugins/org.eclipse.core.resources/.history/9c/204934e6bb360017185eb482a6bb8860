@@ -1,0 +1,13 @@
+package com.jihoon.java.bbs;
+
+public class Bbs {
+
+	public String author;
+	public String data;
+	public String title;
+	public String content;
+	public long date;
+	
+	
+}
+

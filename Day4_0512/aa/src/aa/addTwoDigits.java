@@ -1,0 +1,25 @@
+package aa;
+
+public class addTwoDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		addTwoDigits ad = new addTwoDigits();
+		System.out.println(ad.addTwoDigits(14));
+	}
+	
+	int addTwoDigits(int n) {
+	    
+	    String num_t = n + "";
+	    String[] a = num_t.split("");
+	    int result = 0;
+	    
+	    for(int i=0; i<2; i++){
+	    	result += Integer.parseInt(a[i]);
+	    }
+	    
+	    return result;
+	}
+
+}

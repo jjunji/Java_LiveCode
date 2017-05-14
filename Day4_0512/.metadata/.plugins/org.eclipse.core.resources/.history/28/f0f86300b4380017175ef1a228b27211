@@ -1,0 +1,47 @@
+package com.jihoon.java.minitest;
+
+import java.util.Scanner;
+
+public class AnagramMain {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * anagram : 문자열의 구성이 같은 문자열을 아나그램이라고 한다.
+		 * ex) abcd = acbd = cabd
+		 * 문제 : 입력값을 문자열 n,m으로 받은 후, n 문자열과 m 문자열이 아나그램인지 확인하는 프로그램을 작성하세요.
+		 * 조건 : 아나그램일 경우 결과 값으로 true를 리턴한다.
+		 */
+		
+		Scanner scanner = new Scanner(System.in);
+		String str = scanner.nextLine();
+		String str2 = scanner.nextLine();
+		
+		String[] str_s = str.split("");
+		String[] str2_s = str.split("");
+		String temp = "";
+		
+		System.out.println(str_s[0]);
+		
+/*		for(int i = 0; i<str_s.length; i++){
+			if(str_s[0] > str_s[1]){
+				temp = str_s[i+1];
+				
+			}
+		}*/
+		
+
+	}
+
+}
+
+/*
+	anagram은 모든 알고리즘의 베이스
+	
+	a = abcde
+	b = bcdea
+	
+	1. 문자열을 다 쪼개서 for문으로 비교 -> 능률이 안좋다.
+	
+	2. sort 후 비교
+*/

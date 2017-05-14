@@ -1,0 +1,21 @@
+package aa;
+
+public class addTwoDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		addTwoDigits ad = new addTwoDigits();
+		ad.addTwoDigits(14);
+	}
+	
+	int addTwoDigits(int n) {
+	    
+	    String num_t = n + "";
+	    System.out.println(num_t.charAt(2));
+	    int num = 3;
+	    //int num = Integer.parseInt(num_t.charAt(0)) + Integer.parseInt(num_t.charAt(1));
+	    return num;
+	}
+
+}
