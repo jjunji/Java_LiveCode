@@ -1,0 +1,123 @@
+package com.jihoon.java.array;
+
+import java.util.Scanner;
+
+public class arrayMain {
+
+	public static void main(String[] args) {
+		// 행을 입력받아 소용돌이 숫자 배열 만들기
+		// ex) 3 -> 3 X 3 배열
+		/*
+		 *  1 2 3
+		 *  8 9 4
+		 *  7 6 5
+		 */
+		
+		int count = 1;
+		
+		int sw = 1;
+		
+		int i = 0;
+		int j = 0;
+		int next_i = 0;
+		int next_j = 0;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		String n = scanner.nextLine();
+		int num = Integer.parseInt(n);
+		
+		int[][] array = new int[num][num];
+		
+		while(count < num*num){
+			
+			// sw가 1일 때는 j값(열)을 컨트롤 해주자.
+			if(sw == 1){
+				for(j=next_j; j < num-i; j++){     //num = 3 -> 
+					array[i][j] = count;    // a[0][0]  a[0][1]  a[0][2]  /  a[1][1]  a[1][2]
+					count ++;               // 1 2 3
+				}
+				//count *2 -1 ??
+				
+				j = j-1;
+				
+				for(i=i+1; i < num-j; i++){   //num = 3 ->
+					array[i][j] = count;    // a[1][2]  a[2][2]
+					count ++;				// 4 5
+				}
+				sw = sw * -1;
+				i = i-1;
+			}
+			// sw가 -1일 때는 	
+			if(sw == -1){
+				for(j=j-1; j>=0; j--){		//
+					array[i][j] = count;	// a[2][1]  a[2][0]
+					count++;				// 6 7
+				}
+				j = j+1;
+				
+				for(i=i-1; i>0; i--){		//
+					array[i][j] = count;	// a[1][0]
+					count++;				// 8
+				}
+				i = i+1;
+				sw = sw * -1;
+			}
+			 next_j = j+1;
+			// next_i = i+1;
+		}	
+		
+		for(int z=0; z<num; z++){
+			for(int x=0; x<num; x++){
+				System.out.print(array[z][x]+"\t");
+			}
+			System.out.println();
+		}
+		
+	}
+}
+
+
+/*
+ * 		for(int k=0; k<num*num; k++){
+			
+			
+			
+		}
+ * 
+ * 
+ * 					if(sw == 1){
+				for(int i=0; i < num; i++){
+					for(int j=0; j < num; j++){
+						array[i][j] = k;
+					}
+					sw = 1;
+				}
+			}
+			if(sw == 1){
+				for(int j=num; j<0; j--){
+					for(int i=0; i<num; i++){
+						array[i][j] = k;
+					}
+				}
+			}
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 			for(int i=0; i < num; i++){
+				if(sw == 0){	
+					for(int j=0; j < num; j++){
+						array[i][j] = count;
+						count ++;
+					}
+					sw = 1;
+				}
+				if(sw == 1){
+					for(int )
+				}
+			}
+*/
