@@ -17,7 +17,7 @@ public class BasicMain {
 		
 		int aaa = sub.변수이름;  // 메모리에 있는 값을 가져오는 것.
 		
-		// 2.1 함수 메서드
+		// 2.1 gkatn 메서드
 		int bbb = sub.함수명();
 		// sub.함수명(); -> 문맥상 오류가 없으나, 값을 담고 있는 공간이 없기에 사라짐.
 	}
