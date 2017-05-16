@@ -1,0 +1,6 @@
+package com.jihoon.java.city;
+
+public class Doctor extends People{
+
+	
+}

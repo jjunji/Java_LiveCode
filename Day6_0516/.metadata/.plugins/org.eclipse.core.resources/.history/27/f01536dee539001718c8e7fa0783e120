@@ -1,0 +1,9 @@
+package com.jihoon.java.city;
+
+import com.jihoon.java.city.Furniture;
+
+public class Bed extends Furniture{
+	
+	
+
+}

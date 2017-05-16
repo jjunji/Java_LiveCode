@@ -1,0 +1,8 @@
+package com.jihoon.java.city.hospital;
+
+public class Doctor extends People{
+
+	public void diagnosis(){
+		System.out.println("환자를 진찰한다.");
+	}
+}

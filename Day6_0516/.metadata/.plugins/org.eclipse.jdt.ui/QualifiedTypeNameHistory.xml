@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.jihoon.java.obj.Father"/>
+<fullyQualifiedTypeName name="com.jihoon.java.obj.Son"/>
+<fullyQualifiedTypeName name="com.jihoon.java.city.hospital.People"/>
+<fullyQualifiedTypeName name="com.jihoon.java.city.Building"/>
+<fullyQualifiedTypeName name="com.jihoon.java.city.hospital.Hospital"/>
+<fullyQualifiedTypeName name="com.jihoon.java.city.hospital.Nurse"/>
+<fullyQualifiedTypeName name="com.jihoon.java.city.hospital.Patient"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.jihoon.java.city.hospital.Doctor"/>
+</qualifiedTypeNameHistroy>

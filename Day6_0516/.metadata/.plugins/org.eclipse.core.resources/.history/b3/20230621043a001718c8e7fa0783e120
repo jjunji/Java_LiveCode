@@ -1,0 +1,13 @@
+package com.jihoon.java.polymorphism;
+
+public class PolyMain {
+
+	public static void main(String[] args) {
+
+		Son son = new Son();
+		son.setName("аж╢о╬Н");
+		System.out.println(son.getName());
+		son.goSchool();
+	}
+
+}

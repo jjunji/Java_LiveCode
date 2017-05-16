@@ -1,0 +1,24 @@
+package com.jihoon.java.city;
+
+public class People {
+						//속성은 private로 바꾼다. 
+	public String name = null;
+	private String gender = null;
+	private int age = 0;
+	private String skinColor = null;
+	private String haircolor = null;
+	private int height = 0;
+	private int weight = 0;
+	
+	public void move(String direction){
+		System.out.println(direction + "어떤 방향으로 움직인다.");
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setName(String value){
+		name = value;
+	}
+}

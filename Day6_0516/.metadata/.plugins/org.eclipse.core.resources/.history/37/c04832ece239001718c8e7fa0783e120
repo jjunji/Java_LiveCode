@@ -1,0 +1,5 @@
+package com.jihoon.java.obj;
+
+public abstract class Fix {
+
+}

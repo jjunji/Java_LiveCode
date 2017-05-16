@@ -1,0 +1,24 @@
+package com.jihoon.java.obj;
+
+public class Father {
+
+	public String lastname;
+	public String name;
+	
+	public int age;   // private를 쓰면 상속하지 않겠다. -> { } 코드 블럭 안에서만 호출 가능.
+	public int money;
+	public String house;
+	public String car;
+	public String wife;
+
+	public void process9(){
+		
+	}
+	
+	public void goDestination(){
+		
+		process9();
+		System.out.println("회사를 출근합니다.");
+	}
+	
+}

@@ -1,0 +1,9 @@
+package com.jihoon.java.city;
+
+import com.jihoon.java.city.hospital.People;
+
+public class Patient extends People{
+	
+	public void diagnosis()
+
+}

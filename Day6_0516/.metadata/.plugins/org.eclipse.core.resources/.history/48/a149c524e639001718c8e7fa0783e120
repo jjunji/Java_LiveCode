@@ -1,0 +1,11 @@
+package com.jihoon.java.city.hospital;
+
+public class People {
+
+	private String gender;
+	public int age;
+	public String skinColor;
+	public String haircolor;
+	public int height;
+	public int weight;
+}

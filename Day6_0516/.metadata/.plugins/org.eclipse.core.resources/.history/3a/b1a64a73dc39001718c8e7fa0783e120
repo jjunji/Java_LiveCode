@@ -1,0 +1,22 @@
+package com.jihoon.java.obj;
+
+// 같은 패키지에 father가 있다면 public을 안써도 되지만 다른 패키지에 있다면 접근할 수 없음.
+
+public class Son extends Father{  //extends를 하면 father에 있는 변수 모두 들어감.
+	/*public String lastname;
+	public String name;
+	
+	public int age;
+	public int money;
+	public String house;
+	public String car;
+	public String wife;*/
+	
+	public String wife;
+	public String girlfriend;
+	
+	public void goDestination(){
+		System.out.println("Pc방을 갑니다.");
+	}
+	
+}

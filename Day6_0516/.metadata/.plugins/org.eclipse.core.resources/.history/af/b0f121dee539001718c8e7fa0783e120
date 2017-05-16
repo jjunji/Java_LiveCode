@@ -1,0 +1,9 @@
+package com.jihoon.java.city;
+
+public class Hospital extends Building {
+
+	int doctor;
+	int nurse;
+	int bed;
+	
+}
