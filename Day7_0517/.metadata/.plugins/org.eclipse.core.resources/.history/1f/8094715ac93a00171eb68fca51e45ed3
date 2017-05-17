@@ -1,0 +1,31 @@
+package com.jihoon.mybbs.model;
+
+// mvp에서 p를 작업중.
+
+public class BbsLoader {
+
+	/*
+	 *   저장소에서 데이터를 읽어옴
+	 *   @return -> 반환값에 대한 설명을 쓰자
+	 */
+	
+	public String read(){
+		// 데이터 베이스를 읽어서 나에게 넘겨준다 -> 리턴 값이 있다는 뜻.
+		String result = "";
+		
+		//TODO -> 오른쪽에 파란색 마킹됨 -> 앞으로 할 일 의미.
+		
+		return result;
+	}
+	
+	/*
+	 * 
+	 * @param -> value 텍스트 데이터랍니다.
+	 */
+	
+	public void write(String value){
+		
+		// 쓴다는 것은 인자가 있다
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.jihoon.mybbs;
+
+import com.jihoon.mybbs.presenter.BbsPresenter;
+
+// 우리가 설계하는 객체와는 관계없다. 진입을 위한 클래스
+
+public class MyBbsMain {
+
+	public static void main(String[] args) {
+		
+		BbsPresenter presenter = new BbsPresenter();
+		presenter.start();
+
+	}
+
+}

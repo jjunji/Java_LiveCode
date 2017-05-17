@@ -1,0 +1,117 @@
+package com.jihoon.mybbs.presenter;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.jihoon.mybbs.model.Bbs;
+import com.jihoon.mybbs.view.BbsDetail;
+import com.jihoon.mybbs.view.BbsInput;
+import com.jihoon.mybbs.view.BbsList;
+
+public class BbsPresenter {
+
+	final boolean START = true;  // 상수를 사용하는 것은 가독성을 위해.(보통은 보기가 3개 이상일 때)
+	final boolean FINISH = false;
+	boolean runFlag = true;
+	
+	// 데이터 임시 저장소
+	//ArrayList<Bbs> datas = new ArrayList<>();  
+	ArrayList<Bbs> datas;  
+	
+	// 모두가 사용하므로 전역변수로 선언
+	Scanner scanner;
+	BbsInput input;
+	BbsList list;
+	BbsDetail detail;
+	
+	int number = 0;
+	
+	// 생성자를 통해 사용할 것? 을 미리 로드할 수 있다.
+	public BbsPresenter(){
+		init();
+	}
+	
+/*	함수형
+   private void caller(){
+		init();
+		start();
+	}
+*/
+	
+	
+	/*
+	 * 초기화 함수, 사용할 객체들을 미리 메모리에 로드해둔다. 
+	 */
+	private void init(){
+		scanner = new Scanner(System.in);
+		input = new BbsInput();
+		datas = new ArrayList<>();
+		list = new BbsList();
+		detail = new BbsDetail();
+	}
+	
+	public void start(){
+		// Scanner scanner  = new Scanner(System.in);
+		// init(); -> 옛날 방식 -> 함수간의 종속성이 생김.
+		
+		while(runFlag){
+			System.out.println("명령어를 입력하세요 [1.목록, w:쓰기, r:상세보기]");
+			String command = scanner.nextLine();
+			switch(command){
+			case "1" :
+				list.showList(datas);
+				break;
+			case "w" :
+				
+/*				System.out.println("제목을 입력하세요.");
+				String title = scanner.nextLine();
+				System.out.println("작성자를 입력하세요.");   -> 만들고 input클래스로 넘겼음.
+				String author = scanner.nextLine();
+				System.out.println("내용을 입력하세요.");
+				String content = scanner.nextLine();*/
+				
+				//BbsInput input = new BbsInput();  // -> 이렇게 쓰면 while이 돌 때 마다 new가 생성됨 -> 좋지않다. -> 반복문 밖으로
+				/*
+				Bbs bbs = input.process(scanner);
+				
+				int number = datas.size()+1;
+				bbs.setId(number);
+				datas.add(bbs);
+*/
+				//input.process(scanner);
+				break;
+			case "r" :
+				//System.out.println("글 번호를 입력하세요 ");
+				String id = scanner.nextLine();
+				goDetail();
+				break;
+			}
+		}
+	}
+	
+	public void end(){
+		runFlag = FINISH;
+	}
+	
+	public void write(){
+		Bbs bbs = input.process(scanner);
+		
+		// 기준이 되는 변수가 있으면 미리 지정해야한다.
+		number = number + 1;
+		
+		bbs.setId(number);
+		datas.add(bbs);
+	}
+	
+	public void goDetail(){
+		System.out.println("글 번호를 입력하세요 ");
+		String temp = scanner.nextLine();
+		long id = Long.parseLong(temp);
+		for( Bbs bbs : datas){
+			if(bbs.getId() == id){
+				detail.showDetail(bbs);
+				break; // 조건문에 부합되면 반복문을 중지한다.
+			}
+		}
+	}
+}
